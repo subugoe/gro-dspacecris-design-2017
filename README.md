@@ -23,29 +23,29 @@
 1. View in browser  
 [http://localhost:8020](http://localhost:8020)
 
-### Additional information
+## Additional information
 
-#### Change port of local preview
+### Change port of local preview
 edit ```--port``` value in _package.json_ "serve" script
 
-#### View all npm run scripts with select option?
+### View all npm run scripts with select option?
 ```$ ntl```
 
-#### frontend debugging
+### frontend debugging
 + CSS sourcemaps are available
 
-#### tested on
+### tested on
 macOS 10.13.1 (as of 2017-11-22)
 
-#### Access to netlify?
+### Access to netlify?
 ask [Nils Windisch](https://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/nils-windisch/)
 
-#### Access to the GitHub Repository?
+### Access to the GitHub Repository?
 ask [Nils Windisch](https://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/nils-windisch/)
 
-#### Why? What? Err?
+### Why? What? Err?
 ask [Daniel Beucke](https://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/daniel-beucke/)
 
-#### Additional reading
+### Additional reading
 + [live-server](https://github.com/tapio/live-server)
 + [node-sass](https://github.com/sass/node-sass)
