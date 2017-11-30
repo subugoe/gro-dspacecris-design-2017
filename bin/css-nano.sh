@@ -10,5 +10,5 @@ fi
 log "🏗 CSS Nano $BY"
 
 ./node_modules/.bin/csso \
-  "$(PWD)"/assets/css/style.css \
-  "$(PWD)"/assets/css/style.css
+  ./assets/css/style.css \
+  ./assets/css/style.css

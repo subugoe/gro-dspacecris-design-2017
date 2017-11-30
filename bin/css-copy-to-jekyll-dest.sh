@@ -9,5 +9,5 @@ fi
 
 log "🚌 CSS Copy to Jekyll DEST $BY"
 
-cp "$(PWD)"/assets/css/style.css "$(PWD)"/serve/assets/css/style.css
-cp "$(PWD)"/assets/css/style.css.map "$(PWD)"/serve/assets/css/style.css.map
+cp ./assets/css/style.css ./serve/assets/css/style.css
+cp ./assets/css/style.css.map ./serve/assets/css/style.css.map
