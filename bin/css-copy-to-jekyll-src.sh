@@ -9,5 +9,5 @@ fi
 
 log "🚌 CSS Copy to Jekyll SRC $BY"
 
-cp ./assets/css/style.css ./jekyll/assets/css/style.css
-cp ./assets/css/style.css.map ./jekyll/assets/css/style.css.map
+cp assets/css/style.css jekyll/assets/css/style.css
+cp assets/css/style.css.map jekyll/assets/css/style.css.map
