@@ -1,0 +1,157 @@
+---
+layout: default
+title: "GRO Start"
+---
+<main id="content" role="main">
+    <div class="container fullheight">
+        <div class="row">
+            <div class="col-md-8 sm-12 pull-left">
+                <h1>Göttingen Research Online</h1>
+                <p>Scientific communication takes place in publications and publications tell the profile of Göttingen Campus. What topics do our researchers work on, where do they publish and with whom? Learn more about the power of Göttingen Campus on our public research database Göttingen Research Online that contains information of 5693 publications and 162 authors.</p><p>Our service is currently under construction and will include more authors, their publications and also multiple Göttingen Campus or external affiliations over time. Please get in touch with us if you wish to have your publication list included with special priority.</p></div>
+                <script type="text/javascript">
+                    jQuery(document).ready(function(){
+                        jQuery("#searchglobalprocessor .search-panel .dropdown-menu li a").click(function(){
+                            jQuery('#search_param').val('');
+                            jQuery('#search_param').val(jQuery(this).attr('title'));
+                            return jQuery('#searchglobalprocessor').submit();
+                        });
+                        jQuery("#group-left-info").popover({
+                            trigger: 'click',
+                            html: true,
+                            title: function(){
+                                return jQuery('#group-left-info-popover-head').html();
+                            },
+                            content: function(){
+                                return jQuery('#group-left-info-popover-content').html();
+                            }
+                        });
+                        jQuery('#group-left-info').on('click',function(){
+                            jQuery('#group-center-info').popover('hide');
+                            jQuery('#group-right-info').popover('hide');
+                        });
+                        jQuery('#group-center-info').popover({
+                            trigger: 'click',
+                            html: true,
+                            title: function(){
+                                return jQuery('#group-center-info-popover-head').html();
+                            },
+                            content: function(){
+                                return jQuery('#group-center-info-popover-content').html();
+                            }
+                        });
+                        jQuery('#group-center-info').on('click',function(){
+                            jQuery('#group-left-info').popover('hide');
+                            jQuery('#group-right-info').popover('hide');
+                        });
+                        jQuery('#group-right-info').popover({
+                            trigger: 'click',
+                            html: true,
+                            title: function(){
+                                return jQuery('#group-right-info-popover-head').html();
+                            },
+                            content: function(){
+                                return jQuery('#group-right-info-popover-content').html();
+                            }
+                        });
+                        jQuery('#group-right-info').on('click',function(){
+                            jQuery('#group-left-info').popover('hide');
+                            jQuery('#group-center-info').popover('hide');
+                        });
+                    });
+                </script>
+                <div class="row">
+                    <form id="searchglobalprocessor" name="searchglobalprocessor" class="col-md-10 col-md-offset-1" action="https://grodev.sub.uni-goettingen.de/simple-search" method="get">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="query" placeholder="Search term...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                            </span>
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <span id="search_concept">All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><span class="caret"></span></b>
+                                </button>
+                                <ul class="dropdown-menu menu-global-processor" role="menu">
+                                    <li class="menu-global-processor">
+                                        <a href="https://grodev.sub.uni-goettingen.de/#" title="publications"><span class="badge pull-right">9667</span> Publications &nbsp;&nbsp;&nbsp; <span class="badge invisible">9667</span> </a>
+                                    </li>
+                                    <li class="menu-global-processor">
+                                        <a href="https://grodev.sub.uni-goettingen.de/#" title="crisjournals"><span class="badge pull-right">2931</span> journals &nbsp;&nbsp;&nbsp; <span class="badge invisible">2931</span> </a>
+                                    </li>
+                                    <li class="menu-global-processor">
+                                        <a href="https://grodev.sub.uni-goettingen.de/#" title="researcherprofiles"><span class="badge pull-right">855</span> Researcher profiles &nbsp;&nbsp;&nbsp; <span class="badge invisible">855</span> </a>
+                                    </li>
+                                    <li class="menu-global-processor">
+                                        <a href="https://grodev.sub.uni-goettingen.de/#" title="crisevents"><span class="badge pull-right">147</span> events &nbsp;&nbsp;&nbsp; <span class="badge invisible">147</span> </a>
+                                    </li>
+                                    <li class="menu-global-processor">
+                                        <a href="https://grodev.sub.uni-goettingen.de/#" title="orgunits"><span class="badge pull-right">20</span> Organizations &nbsp;&nbsp;&nbsp; <span class="badge invisible">20</span> </a>
+                                    </li>
+                                    <li class="menu-global-processor">
+                                        <a href="https://grodev.sub.uni-goettingen.de/#" title="fundings"><span class="badge pull-right">3</span> Fundings &nbsp;&nbsp;&nbsp; <span class="badge invisible">3</span> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="location" value="global" id="search_param">
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <a href="https://grodev.sub.uni-goettingen.de/#group-left-info-popover-content">
+                        <div class="col-md-4 text-center">
+                            <h4 class="text-success">People</h4>
+                            <p><span class="fa fa-users fa-5x" id="group-left-info" data-placement="right" data-original-title="" title=""></span> <span class="badge">855</span></p>
+                            <small class="label label-success">Explore the researcher community</small>
+                        </div>
+                    </a>
+                    <a href="https://grodev.sub.uni-goettingen.de/#group-center-info-popover-content">
+                        <div class="col-md-4 text-center">
+                            <h4 class="text-success">Repository other entities</h4>
+                            <p><span class="fa fa-cogs fa-5x" id="group-center-info" data-placement="bottom" data-original-title="" title=""></span> <span class="badge">23</span></p>
+                            <small class="label label-success">Explore entities</small>
+                        </div>
+                    </a>
+                    <a href="https://grodev.sub.uni-goettingen.de/#group-right-info-popover-content">
+                        <div class="col-md-4 text-center">
+                            <h4 class="text-success">Publications, <small>books, articles...</small></h4>
+                            <p><span class="fa fa-file-text-o fa-5x" id="group-right-info" data-placement="left" data-original-title="" title=""></span> <span class="badge">9667</span></p>
+                            <small class="label label-success">Explore publications</small>
+                        </div>
+                    </a>
+                </div>
+                <div id="group-left-info-popover-head" class="hide">
+                    Researchers
+                </div>
+                <div id="group-center-info-popover-head" class="hide">
+                    Others info
+                </div>
+                <div id="group-right-info-popover-head" class="hide">
+                    Publications info
+                </div>
+                <div id="group-left-info-popover-content" class="hide">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">855</span> <a href="https://grodev.sub.uni-goettingen.de/simple-search?query=&amp;location=researcherprofiles">People</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="group-center-info-popover-content" class="hide">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">20</span> <a href="https://grodev.sub.uni-goettingen.de/simple-search?query=&amp;location=orgunits">Organization Units</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span> <a href="https://grodev.sub.uni-goettingen.de/simple-search?query=&amp;location=fundings">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="group-right-info-popover-content" class="hide">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">9667</span> <a href="https://grodev.sub.uni-goettingen.de/simple-search?query=&amp;location=publications">All Publications</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

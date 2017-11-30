@@ -1,0 +1,11 @@
+{
+  "ui": {
+   "port": 3021
+  },
+  "files": false,
+  "open": false,
+  "port": 3020,
+  "server": {
+    "baseDir": "./serve"
+  }
+}

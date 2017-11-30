@@ -1,0 +1,9 @@
+title: "Mockup Template"
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: ""
+url: ""
+timezone: Europe/Berlin
+permalink: pretty
+markdown: kramdown
+source: "jekyll"
+destination: "serve"

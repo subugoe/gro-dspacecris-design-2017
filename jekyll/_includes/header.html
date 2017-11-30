@@ -1,0 +1,98 @@
+<header class="navbar navbar-inverse navbar-square">
+    <div class="navbar-header">
+        <!-- TODO: missing link text -->
+        <a class="navbar-brand" href="https://grodev.sub.uni-goettingen.de/">
+            <!-- TODO: missing ALT on IMG -->
+            <img src="{{ site.baseurl }}/assets/img/logo2.png" class="visible-md visible-lg hidden-sm hidden-xs" alt="">
+            <!-- TODO: missing ALT on IMG -->
+            <img id="brand-image" src="{{ site.baseurl }}/assets/img/logo_small.png" class="visible-sm visible-xs hidden-md hidden-lg" alt="">
+        </a>
+        <span id="home-top" href="/" class="pull-left visible-xs">
+            <a href="https://grodev.sub.uni-goettingen.de/" class="active">
+                <span class="sr-only">Home.</span>
+                <span class="glyphicon glyphicon-home"></span>
+            </a>
+            <a href="https://grodev.sub.uni-goettingen.de/help/index.html" class="">
+                <span class="sr-only">Help.</span>
+                <span class="glyphicon glyphicon-question-sign"></span>
+            </a>
+        </span>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <nav class="collapse navbar-collapse container" role="navigation">
+        <ul class="nav navbar-nav navbar-left sp">
+            <li id="home-top-menu" class="pull-left   active">
+                <a href="https://grodev.sub.uni-goettingen.de/">
+                    <span class="hidden-md hidden-sm hidden-xs pull-left">Home</span>
+                    <span class="hidden-lg pull-left hidden-xs">
+                        <span class="sr-only">Help.</span>
+                        <span class="glyphicon glyphicon-home"></span>
+                    </span>
+                </a>
+            </li>
+            <li id="publications-top-menu" class="hidden-xs hidden-sm ">
+                <a href="https://grodev.sub.uni-goettingen.de/browse?type=dateissued">Research Outputs</a>
+            </li>
+            <li id="researcherprofiles-top-menu" class="hidden-xs hidden-sm ">
+                <a href="https://grodev.sub.uni-goettingen.de/browse?type=rpname">Researchers</a>
+            </li>
+            <li class="dropdown hidden-md hidden-lg">
+                <a href="https://grodev.sub.uni-goettingen.de/#" class="dropdown-toggle" data-toggle="dropdown">Explore by <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="https://grodev.sub.uni-goettingen.de/browse?type=dateissued">Research Outputs</a>
+                    </li>
+                    <li>
+                        <a href="https://grodev.sub.uni-goettingen.de/browse?type=rpname">Researchers</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="help-top-menu">
+                <a href="https://grodev.sub.uni-goettingen.de/help/index.html">
+                    <span class="visible-lg">Help</span>
+                    <span class="visible-md visible-sm">
+                        <span class="sr-only">Help.</span>
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <!-- TODO: Check if this DIV is used and/or required -->
+        <!-- <div class="nav navbar-nav navbar-right"> -->
+            <!-- QUESTION: why are CSS classes duplicated here -->
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li id="language-top-menu" class="dropdown"> -->
+                <li id="language-top-menu">
+                    <a onclick="javascript:document.repost.locale.value=&#39;de&#39;;document.repost.submit();" href="https://grodev.sub.uni-goettingen.de/?locale=de">
+                        <span class="glyphicon glyphicon-globe"></span> DE <span class="sr-only">Zu deutscher Sprache wechseln.</span>
+                    </a>
+                </li>
+                <li id="user-top-menu" class="dropdown">
+                    <a href="https://grodev.sub.uni-goettingen.de/#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="hidden-lg">
+                            <span class="glyphicon glyphicon-user"></span><b class="caret"></b>
+                        </span>
+                        <span class="hidden-md hidden-sm hidden-xs">
+                            Sign on to: <b class="caret"></b>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://grodev.sub.uni-goettingen.de/mydspace">My DSpace</a>
+                        </li>
+                        <li>
+                            <a href="https://grodev.sub.uni-goettingen.de/subscribe">Receive email<br>updates</a>
+                        </li>
+                        <li>
+                            <a href="https://grodev.sub.uni-goettingen.de/profile">Edit Account details</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        <!-- </div> -->
+    </nav>
+</header>

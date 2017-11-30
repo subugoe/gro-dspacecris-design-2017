@@ -1,0 +1,49 @@
+@import "jquery-ui-1.10.3.custom";
+@import "researcher";
+@import "jdyna";
+@import "vars";
+@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "font-awesome";
+@import "style-orig";
+@import "orcid";
+@import "dataTables.bootstrap";
+@import "buttons.bootstrap";
+@import "responsive.bootstrap";
+@import "bootstrap-datetimepicker";
+@import "cookieconsent";
+
+
+.cc-window {
+  display: none;
+}
+
+header,
+footer {
+  background-color: $brand-primary;
+}
+
+footer {
+  color: white;
+  padding-bottom: 32px;
+
+  a {
+    color: white;
+    &:hover,
+    &:focus,
+    &:active {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__logos {
+  img {
+    max-width: 100%;
+    padding-top: 16px;
+  }
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  background-color: $brand-primary;
+}
