@@ -47,3 +47,47 @@ footer {
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
   background-color: $brand-primary;
 }
+
+.navbar-collapse,
+.navbar-inverse,
+.navbar-form {
+  border: 0;
+  box-shadow: none;
+}
+
+.navbar-collapse,
+.navbar-left {
+  @media (min-width: $screen-sm) {
+    padding-right: 0;
+  }
+}
+
+.navbar-brand {
+  @media (min-width: $screen-md) {
+    height: 60px;
+  }
+}
+
+.navbar-nav {
+  @media (min-width: $screen-sm) {
+    float: right;
+  }
+  @media (min-width: $screen-md) {
+    padding-top: 4px;
+  }
+}
+
+.navbar-form {
+  text-align: right;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-form {
+  @media (max-width: $screen-md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
