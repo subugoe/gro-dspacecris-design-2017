@@ -91,3 +91,9 @@ footer {
     margin-right: 0;
   }
 }
+
+.text-xs-center {
+  @media (max-width: $screen-xs) {
+    text-align: center;
+  }
+}
