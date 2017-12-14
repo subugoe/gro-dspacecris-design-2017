@@ -59,7 +59,7 @@ title: "GRO Start"
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h1>GÖTTINGEN RESEARCH ONLINE</h1>
+                <h1><img src="{{ site.baseurl }}/assets/img/logo_gro_all_blue.svg" class="home__logo"></h1>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
                 <p>Scientific communication takes place in publications and publications tell the profile of Göttingen Campus. What topics do our researchers work on, where do they publish and with whom? Learn more about the power of Göttingen Campus on our public research database Göttingen Research Online that contains information of 5693 publications and 162 authors.</p>
@@ -67,62 +67,52 @@ title: "GRO Start"
             <div class="col-xs-12 col-sm-5">
                 <p>Our service is currently under construction and will include more authors, their publications and also multiple Göttingen Campus or external affiliations over time. Please get in touch with us if you wish to have your publication list included with special priority.</p>
             </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-          <div class="col-xs-12 col-md-10 col-md-offset-1">
-              <h2>Search</h2>
-              <p>Lorem ipsum dolor sit amut.</p>
-              <form id="searchglobalprocessor" name="searchglobalprocessor" class="" action="https://grodev.sub.uni-goettingen.de/simple-search" method="get">
-                  <div class="input-group">
-                      <input type="text" class="form-control" name="query" placeholder="Search term...">
-                      <span class="input-group-btn">
-                          <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
-                      </span>
-                      <div class="input-group-btn search-panel">
-                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                              <span id="search_concept">All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><span class="caret"></span></b>
-                          </button>
-                          <ul class="dropdown-menu menu-global-processor" role="menu">
-                              <li class="menu-global-processor">
-                                  <a href="https://grodev.sub.uni-goettingen.de/#" title="publications"><span class="badge pull-right">9667</span> Publications &nbsp;&nbsp;&nbsp; <span class="badge invisible">9667</span> </a>
-                              </li>
-                              <li class="menu-global-processor">
-                                  <a href="https://grodev.sub.uni-goettingen.de/#" title="crisjournals"><span class="badge pull-right">2931</span> journals &nbsp;&nbsp;&nbsp; <span class="badge invisible">2931</span> </a>
-                              </li>
-                              <li class="menu-global-processor">
-                                  <a href="https://grodev.sub.uni-goettingen.de/#" title="researcherprofiles"><span class="badge pull-right">855</span> Researcher profiles &nbsp;&nbsp;&nbsp; <span class="badge invisible">855</span> </a>
-                              </li>
-                              <li class="menu-global-processor">
-                                  <a href="https://grodev.sub.uni-goettingen.de/#" title="crisevents"><span class="badge pull-right">147</span> events &nbsp;&nbsp;&nbsp; <span class="badge invisible">147</span> </a>
-                              </li>
-                              <li class="menu-global-processor">
-                                  <a href="https://grodev.sub.uni-goettingen.de/#" title="orgunits"><span class="badge pull-right">20</span> Organizations &nbsp;&nbsp;&nbsp; <span class="badge invisible">20</span> </a>
-                              </li>
-                              <li class="menu-global-processor">
-                                  <a href="https://grodev.sub.uni-goettingen.de/#" title="fundings"><span class="badge pull-right">3</span> Fundings &nbsp;&nbsp;&nbsp; <span class="badge invisible">3</span> </a>
-                              </li>
-                          </ul>
-                      </div>
-                      <input type="hidden" name="location" value="global" id="search_param">
-                  </div>
-              </form>
-          </div>
-          <div class="col-xs-12 col-md-10 col-md-offset-1" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <button type="button" class="btn btn-default btn-sm">Publications</button>
-              <button type="button" class="btn btn-default btn-sm">Journals</button>
-              <button type="button" class="btn btn-default btn-sm">Researcher profiles</button>
-              <button type="button" class="btn btn-default btn-sm">Events</button>
-              <button type="button" class="btn btn-default btn-sm">Organisations</button>
-              <button type="button" class="btn btn-default btn-sm">Fundings</button>
-          </div>
-      </div>
+        </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-10 col-md-offset-1">
-                <h2>Features</h2>
+                <div class="text-xs-center">
+                    <h2>Search</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amut.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-offset-1">
+                <div class="text-xs-center text-right">
+                    <h3>Search for</h3>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-7">
+                <form id="searchglobalprocessor" name="searchglobalprocessor" class="" action="https://grodev.sub.uni-goettingen.de/simple-search" method="get">
+                    <input type="text" class="form-control" name="query" placeholder="Search term...">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-offset-1">
+                <div class="text-xs-center text-right">
+                    <h3>Search in</h3>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-7">
+                <button type="button" class="btn btn-default btn-sm">Everything</button>
+                <button type="button" class="btn btn-default btn-sm">Publications</button>
+                <button type="button" class="btn btn-default btn-sm">Journals</button>
+                <button type="button" class="btn btn-default btn-sm">Researcher profiles</button>
+                <button type="button" class="btn btn-default btn-sm">Events</button>
+                <button type="button" class="btn btn-default btn-sm">Organisations</button>
+                <button type="button" class="btn btn-default btn-sm">Fundings</button>
+            </div>
+        </div>
+    </div>
+    <div class="container home__features">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="text-xs-center">
+                    <h2>Features</h2>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
@@ -131,10 +121,10 @@ title: "GRO Start"
                 <h3>Feature 1</h3>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
-                <p>IMAGE</p>
+                <p><img src="{{ site.baseurl }}/assets/img/benjamin-child-17946.jpg"></p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
         <div class="row">
@@ -142,10 +132,10 @@ title: "GRO Start"
                 <h3>Feature 2</h3>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-sm-push-6">
-                <p>IMAGE</p>
+                <p><img src="{{ site.baseurl }}/assets/img/stefan-stefancik-257625.jpg"></p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-sm-pull-6 col-md-offset-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
         <div class="row">
@@ -153,11 +143,84 @@ title: "GRO Start"
                 <h3>Feature 3</h3>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
-                <p>IMAGE</p>
+                <p><img src="{{ site.baseurl }}/assets/img/markus-spiske-221494.jpg"></p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 ">
+                <div class="text-xs-center">
+                    <h2>Features</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 text-xs-center">
+                <h3>Feature 1</h3>
+                <p><img src="{{ site.baseurl }}/assets/img/benjamin-child-17946.jpg"></p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-xs-center">
+                <h3>Feature 2</h3>
+                <p><img src="{{ site.baseurl }}/assets/img/stefan-stefancik-257625.jpg"></p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-xs-center">
+                <h3>Feature 3</h3>
+                <p><img src="{{ site.baseurl }}/assets/img/markus-spiske-221494.jpg"></p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="text-xs-center">
+                    <h2>Features</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-xs-center">
+                <h3>Feature 1</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p><img src="{{ site.baseurl }}/assets/img/benjamin-child-17946.jpg"></p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-xs-center">
+                <h3>Feature 2</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                <p><img src="{{ site.baseurl }}/assets/img/stefan-stefancik-257625.jpg"></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-xs-center">
+                <h3>Feature 3</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p><img src="{{ site.baseurl }}/assets/img/markus-spiske-221494.jpg"></p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                </blockquote>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
     </div>
 </main>
