@@ -97,6 +97,12 @@ footer {
   }
 }
 
+.text-sm-right {
+  @media (min-width: $screen-sm) {
+    text-align: right;
+  }
+}
+
 .home__features {
   img {
     max-width: 100%;
