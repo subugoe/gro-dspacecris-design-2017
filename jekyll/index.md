@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "GRO Index"
+title: "Index"
 ---
-# gro-dspacecris-design-2017
+# GRO DSpaceCRIS Design 2017
 
 ## Available pages
 *[Start](/start)
