@@ -7,27 +7,70 @@
   "author": "Nils Windisch <nils@windisch.me>",
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
-    "browser-sync": "^2.18.13",
-    "concurrently": "^3.5.1",
-    "cssnano": "^3.10.0",
-    "doiuse": "^4.0.0",
-    "node-notifier-cli": "^1.0.1",
-    "node-sass": "^4.7.2",
-    "nodemon": "^1.12.1",
-    "npm-check-updates": "^2.13.0",
-    "ntl": "^1.2.0",
-    "postcss": "^6.0.14",
-    "postcss-calc": "^6.0.1",
-    "postcss-cli": "^4.1.1",
-    "postcss-minify-font-values": "^1.0.5",
-    "postcss-object-fit-images": "^1.1.2"
+    "browser-sync": "^2.18",
+    "cssnano": "^3.10",
+    "imagemin-cli": "^3.0",
+    "imagemin-pngcrush": "^5.1",
+    "imagemin-svgo": "^6.0",
+    "imagemin-webp": "^4.0",
+    "node-sass": "^4.7",
+    "nodemon": "^1.12",
+    "ntl": "^1.2",
+    "postcss": "^6.0",
+    "postcss-calc": "^6.0",
+    "postcss-cli": "^4.1",
+    "postcss-minify-font-values": "^1.0",
+    "postcss-object-fit-images": "^1.1"
+  },
+  "config": {
+    "img": {
+      "webp": {
+        "active": true
+      },
+      "svg": {
+        "active": true
+      },
+      "jpg": {
+        "active": true
+      },
+      "png": {
+        "active": true
+      }
+    },
+    "css": {
+      "calc": {
+        "active": true
+      },
+      "nano": {
+        "active": true
+      },
+      "prefix": {
+        "active": true,
+        "versions": "last 2 versions"
+      },
+      "objectfit": {
+        "active": true
+      },
+      "fontvalues": {
+        "active": true
+      }
+    },
+    "url": "localhost",
+    "browsersync": {
+      "port": 3020,
+      "uiport": 3021
+    },
+    "log": {
+      "active": true,
+      "file": "log.log"
+    }
   },
   "scripts": {
-    "cleanup": "./bin/css-cleanup.sh; ./bin/serve-cleanup.sh; ./bin/log-cleanup.sh",
-    "css-doiuse": "./bin/css-doiuse.sh",
-    "watch-jekyll": "./bin/watch-jekyll.sh",
-    "watch-jekyll-scss": "./bin/watch-jekyll-scss.sh",
-    "css-compile": "./bin/css-compile-scss--dev.sh",
-    "dist-netlify": "./bin/dist--netlify.sh"
+    "predist": "./bin/predist.sh",
+    "dist": "./bin/dist.sh",
+    "prenetlify": "./bin/prenetlify.sh",
+    "netlify": "./bin/netlify.sh",
+    "predev": "./bin/predev.sh",
+    "dev": "./bin/dev.sh"
   }
 }

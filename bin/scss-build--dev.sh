@@ -3,4 +3,4 @@
 
 source ./bin/lib.sh
 
-browsersyncReload
+scssBuildDev

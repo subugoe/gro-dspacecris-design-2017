@@ -3,4 +3,8 @@
 
 source ./bin/lib.sh
 
-browsersyncReload
+logCleanup
+distCleanup
+jekyllCleanup
+imgCleanup
+mkdir dist

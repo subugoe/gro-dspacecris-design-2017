@@ -3,4 +3,4 @@
 
 source ./bin/lib.sh
 
-browsersyncReload
+browsersyncStart & imgWatch & scssWatchDev & jekyllWatchDev

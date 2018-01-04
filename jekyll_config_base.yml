@@ -1,7 +1,4 @@
-title: "Mockup Template"
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: ""
-url: ""
+title: "Mockup-Template"
 timezone: Europe/Berlin
 permalink: pretty
 markdown: kramdown
