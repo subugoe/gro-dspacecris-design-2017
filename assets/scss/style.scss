@@ -112,3 +112,17 @@ footer {
 .home__logo {
   width: 100%;
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav__the-list {
+  padding: 1rem 0;
+
+  a {
+    color: #FFF;
+    text-decoration: none;
+  }
+}
