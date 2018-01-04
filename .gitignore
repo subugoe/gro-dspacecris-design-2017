@@ -1,6 +1,9 @@
+assets/css
+assets/img/optimized
+dist
+jekyll/assets/css
+jekyll/assets/img
 node_modules
 npm-debug.log
-serve
-assets/css
-jekyll/assets/css
 log.log
+serve
