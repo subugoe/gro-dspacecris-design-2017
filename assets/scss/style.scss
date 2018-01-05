@@ -119,10 +119,14 @@ footer {
 }
 
 .nav__the-list {
-  padding: 1rem 0;
+  padding: 0 0 1rem;
 
   a {
     color: #FFF;
     text-decoration: none;
+  }
+
+  ul {
+    margin-top: 1.5rem;
   }
 }
