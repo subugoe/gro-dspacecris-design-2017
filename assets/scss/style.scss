@@ -129,4 +129,14 @@ footer {
   ul {
     margin-top: 1.5rem;
   }
+
+  .col-lg-8 {
+    display: flex;
+    align-items: center
+  }
+
+  .col-lg-4 {
+    display: flex;
+    justify-content: flex-end
+  }
 }
