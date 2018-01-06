@@ -140,3 +140,18 @@ footer {
     justify-content: flex-end
   }
 }
+
+.search__homepage {
+
+}
+
+.search__homepage__searchfor,
+.search__homepage__searchin {
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.search__homepage__searchin {
+  margin-top: 0.5rem;
+}
