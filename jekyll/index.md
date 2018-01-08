@@ -6,4 +6,4 @@ title: "Index"
 
 ## Available pages
 *[Start](/start)
-*[Start2](/start2)
+*[Detail](/detail)

@@ -17,12 +17,6 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li id="publications-top-menu" class="hidden-sm hidden-md">
-                    <a href="https://grodev.sub.uni-goettingen.de/browse?type=dateissued">Research Outputs</a>
-                </li>
-                <li id="researcherprofiles-top-menu" class="hidden-sm hidden-md">
-                    <a href="https://grodev.sub.uni-goettingen.de/browse?type=rpname">Researchers</a>
-                </li>
                 <li class="dropdown hidden-xs hidden-lg">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore by <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -71,7 +65,7 @@
                         <span class="glyphicon glyphicon-globe"></span> DE <span class="sr-only">Zu deutscher Sprache wechseln.</span>
                     </a>
                 </li>
-                <li>
+                <li class="hidden-lg">
                     <form class="navbar-form navbar-left">
                       <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search">
@@ -80,6 +74,31 @@
                     </form>
                 </li>
             </ul>
+        </div>
+        <div class="nav__the-list hidden-xs hidden-sm hidden-md">
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#0">Research Outputs</a>
+                        </li>
+                        <li>
+                            <a href="#0">Researchers</a>
+                        </li>
+                        <li>
+                            <a href="#0">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <form class="navbar-form navbar-left">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
