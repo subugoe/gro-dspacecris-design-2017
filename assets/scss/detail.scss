@@ -3,12 +3,50 @@
 }
 
 .detail__meta {
-
+  dt {
+    font-size: 125%;
+    padding-bottom: 0.5rem;
+  }
+  dd {
+    padding-bottom: 1.25rem;
+  }
 }
 
 .detail__quote {
   p {
     border: 1px solid lightgrey;
     padding: 1rem;
+  }
+}
+
+.detail__quote__links {
+  height: 33px;
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.detail__quote__links,
+.detail__quote__select {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: $screen-md) {
+  .detail__quote__select {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .detail__quote__select {
+    justify-content: flex-end;
+  }
+}
+
+.detail__misc {
+  .btn {
+    margin-bottom: 0.5rem;
+    width: 100%;
   }
 }
