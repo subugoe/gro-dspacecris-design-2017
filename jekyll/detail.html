@@ -2,4 +2,54 @@
 layout: default
 title: "Home"
 ---
-{% include main_detail.html %}
+<main id="content" role="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-10 col-lg-offset-1">
+                <h1>Sarcomeric cardiomyopathies: from bedside to bench and back</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-lg-offset-1 col-lg-10">
+                {% include detail_quote.html %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-5 col-lg-offset-1" style="display: flex; align-items: center;">
+                <strong>Links</strong>
+                <!-- TODO: remove inline style -->
+                <ul class="list-inline" style="display: inline; margin-left: 0.5rem;">
+                    <li><a target=_blank href="http://doi.org/10.1002%2Fejhf.465">DOI</a></li>
+                    <li><a target=_blank href="https://www.ncbi.nlm.nih.gov/pubmed/26694078">PMID</a></li>
+                    <li><a target=_blank href="http://europepmc.org/abstract/MED/26694078">PMC</a></li>
+                    <li><a target=_blank href="http://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/000374308700005">WoS</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-lg-5 text-right">
+                <strong>Citation Style</strong>
+                <!-- TODO: remove inline style -->
+                <div class="btn-group btn-group-sm" role="group" style="margin-left: 0.5rem;">
+                    <button type="button" class="btn btn-default">Default</button>
+                    <button type="button" class="btn btn-default">APA</button>
+                    <button type="button" class="btn btn-default">Chicago</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-lg-offset-1 col-lg-8">
+                {% include detail_meta.html %}
+            </div>
+            <div class="col-sm-4 col-lg-2">
+                {% include detail_ref.html %}
+                {% include detail_download.html %}
+                <h2>Misc</h2>
+                <div>
+                    <a class="btn btn-success" href="/suggest?handle=2/113" target="_blank">Recommend this item</a>
+                </div>
+                <div>
+                    <a class="btn btn-default" href="/handle/2/113?mode=full">Show full item record</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,21 @@
+footer {
+  color: white;
+  padding-bottom: 32px;
+
+  a {
+    color: white;
+    &:hover,
+    &:focus,
+    &:active {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__logos {
+  img {
+    max-width: 100%;
+    padding-top: 16px;
+  }
+}

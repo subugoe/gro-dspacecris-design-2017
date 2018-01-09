@@ -1,0 +1,20 @@
+header,
+footer {
+  background-color: $brand-primary;
+}
+
+.cc-window {
+  display: none;
+}
+
+.text-xs-center {
+  @media (max-width: $screen-xs) {
+    text-align: center;
+  }
+}
+
+.text-sm-right {
+  @media (min-width: $screen-sm) {
+    text-align: right;
+  }
+}
