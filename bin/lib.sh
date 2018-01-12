@@ -220,7 +220,7 @@ function jekyllWatchDev() {
 
 
 function log() {
-  echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> ./${npm_package_config_log_file}
+  echo "$1 | $(date '+%Y-%m-%d %H:%M:%S')" >> ./${npm_package_config_log_file}
 }
 
 function logCleanup() {
