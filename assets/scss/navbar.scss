@@ -23,9 +23,6 @@
 }
 
 .navbar-nav {
-  @media (min-width: $screen-sm) {
-    float: right;
-  }
   @media (min-width: $screen-md) {
     padding-top: 4px;
   }
@@ -56,26 +53,19 @@
 }
 
 .nav__the-list {
-  padding: 0 0 1rem;
-
   a {
     color: #FFF;
     text-decoration: none;
+  }
 
-    &:hover,
-    &:active,
-    &:hover,
-    .active {
-      font-weight: bold;
+  li.active,
+  li:hover,
+  li:active,
+  li:focus {
+    background-color: white;
+    a {
+      color: $brand-primary !important;
     }
-  }
-
-  .active {
-    font-weight: bold;
-  }
-
-  ul {
-    margin-top: 1.5rem;
   }
 
   .col-lg-8 {
@@ -86,5 +76,11 @@
   .col-lg-4 {
     display: flex;
     justify-content: flex-end
+  }
+}
+
+.navbar-right {
+  @media (min-width: $screen-sm) {
+    float: right;
   }
 }
