@@ -61,6 +61,17 @@
   a {
     color: #FFF;
     text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:hover,
+    .active {
+      font-weight: bold;
+    }
+  }
+
+  .active {
+    font-weight: bold;
   }
 
   ul {
