@@ -6,80 +6,24 @@ title: "Index"
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        Publishing: Windisch, Nils
-                        <span class="pull-right"><script type="text/javascript">
-                        <!-- Javascript starts here
-                        document.write('<a href="#" onClick="var popupwin = window.open(\'/help/index.html#mydspace\',\'dspacepopup\',\'height=600,width=550,resizable,scrollbars\');popupwin.focus();return false;"><span class="fa fa-question-circle"></span><\/a>');
-                        // -->
-                        </script><a href="#" onclick="var popupwin = window.open('/help/index.html#mydspace','dspacepopup','height=600,width=550,resizable,scrollbars');popupwin.focus();return false;"><span class="fa fa-question-circle"></span></a><noscript>&lt;a href="/help/index.html#mydspace" target="dspacepopup"&gt;&lt;span class="fa fa-question-circle"&gt;&lt;/span&gt;&lt;/a&gt;</noscript></span>
-                   </div>
-                   <div class="panel-body">
-                       <h2 id="h2-cris-rp-status" class="cris-rp-status" style="display: none;">
-                           Researcher profile status:
-                           <a href="#"><span class="cris-rp-status-value">loading...</span>
-                               <span class="fa fa-edit"></span>
-                           </a>
-                        </h2>
-                        <h2 id="h2-cris-rp-status-active" class="cris-rp-status" style="display:none;">
-                            Researcher profile status:
-                            <a href="#" class="cris-rp-status-active" data-toggle="modal" data-target="#cris-rp-change-active">
-                                <span class="cris-rp-status-value">public</span>
-                                <span class="fa fa-edit"></span>
-                            </a>
-                        </h2>
-                        <h2 id="h2-cris-rp-status-active-admin" class="cris-rp-status" style="display:none;">
-                            Researcher profile status:
-                            <a href="#" class="cris-rp-status-active" data-toggle="modal" data-target="#cris-rp-change-admin">
-                                <span class="cris-rp-status-value">public</span>
-                                <span class="fa fa-edit"></span>
-                            </a>
-                        </h2>
-                        <h2 id="h2-cris-rp-status-inactive" class="cris-rp-status" style="display:none;">
-                            Researcher profile status:
-                            <a href="#" class="cris-rp-status-inactive" data-toggle="modal" data-target="#cris-rp-change-inactive">
-                                <span class="cris-rp-status-value">private</span>
-                                <span class="fa fa-edit"></span>
-                            </a>
-                        </h2>
-                        <h2 id="h2-cris-rp-status-inactive-admin" class="cris-rp-status" style="display:none;">
-                            Researcher profile status:
-                            <a href="#" class="cris-rp-status-inactive" data-toggle="modal" data-target="#cris-rp-change-admin">
-                                <span class="cris-rp-status-value">private</span>
-                                <span class="fa fa-edit"></span>
-                            </a>
-                        </h2>
-                        <h2 id="h2-cris-rp-status-undefined" class="cris-rp-status" style="">
-                            Researcher profile status:
-                            <a href="#" class="cris-rp-status-undefined" data-toggle="modal" data-target="#cris-rp-change-undefined">
-                                <span class="cris-rp-status-value">not yet created</span>
-                                <span class="fa fa-edit"></span>
-                            </a>
-                        </h2>
-                        <form action="/mydspace" method="post">
-                            <input type="hidden" name="step" value="0">
-                            <input class="btn btn-success" type="submit" name="submit_new" value="Start a New Submission">
-                            <input class="btn btn-info" type="submit" name="submit_own" value="View Accepted Submissions">
-                        </form>
-                        <script>
-                            function showMoreClicked(index){
-                                j('#moreinfo_'+index).toggle( "slow", function() {
-                                    // Animation complete.
-                                });
-                                j('#a1_'+index).toggle();
-                                j('#a2_'+index).toggle();
-                            }
-                            function showItemsClicked(index){
-                                j('#iteminfo_'+index).toggle( "slow", function() {
-                                    // Animation complete.
-                                });
-                                j('#a3_'+index).toggle();
-                                j('#a4_'+index).toggle();
-                            }
-                        </script>
-                    </div>
-                </div>
+                <h1>Publishing: Windisch, Nils</h1>
+                <h2>Researcher Profile Status</h2>
+                <p>
+                    <a href="/cris/rp/rp25601" class="">View your profile</a>
+                </p>
+                <h3>Hide or remove your researcher profile</h3>
+                <p>
+                    Your researcher profile is <b>currently active</b>. You can hide it from public view or remove it completely from the system. Hidden profiles are still searchable in submission to link authored publications.
+                </p>
+                <button type="button" id="activeDialogChangeInActive" class="btn btn-warning" data-dismiss="modal">Hide (private)</button>
+                <button type="button" id="activeDialogChangeRemove" class="btn btn-danger" data-dismiss="modal">Warning: Permanently delete</button>
+                <h2>New Submission</h2>
+                <a href="#0">Start a new submission</a>
+                <h2>Unfinished Submissions</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amut <em>by</em> Windisch, Nils<br /><a href="#0">[VIEW]</a> <a href="#0">[EDIT]</a> <a href="#0">[REMOVE]</a></li>
+                    <li>Lorem ipsum dolor sit amut <em>by</em> Windisch, Nils<br /><a href="#0">[VIEW]</a> <a href="#0">[EDIT]</a> <a href="#0">[REMOVE]</a></li>
+                </ul>
             </div>
         </div>
     </div>
