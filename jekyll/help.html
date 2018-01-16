@@ -2,11 +2,55 @@
 layout: "default"
 title: "Help"
 ---
-<main id="content" role="main">
+<main id="content" role="main" class="help">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-10 col-sm-offset-1">
                 <h1>Help</h1>
+                <ul class="list-unstyled">
+                    <li><a href="">Browser</a></li>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">Advanced Search</a></li>
+                </ul>
+                <p>DSpace captures, distributes and preserves digital research products. Here you can find articles, working papers, preprints, technical reports, conference papers and data sets in various digital formats. Content grows daily as new communities and collections are added to DSpace.</p>
+                <p>The DSpace content is organized around Communities which can correspond to administrative entities such as schools, departments, labs and research centers. Within each community there can be an unlimited number subcommunities and an unlimited number of collections. Each collection may contain an unlimited number of items.</p>
+                <h2>Browse</h2>
+                <dl>
+                    <dt>Browse</dt>
+                    <dd>allows you to go through a list of items in some specified order:</dd>
+                    <dt>Browse by Community/Collection</dt>
+                    <dd>takes you through the communities in alphabetical order and allows you to see the subcommunities and collections within each community.</dd>
+                    <dt>Browse by Title</dt>
+                    <dd>allows you to move through an alphabetical list of all titles of items in DSpace.</dd>
+                    <dt>Browse by Author</dt>
+                    <dd>allows you to move through an alphabetical list of all authors of items in DSpace.</dd>
+                    <dt></dt>
+                    <dd></dd>
+                </dl>
+                <h2>Search</h2>
+                <p>To search all of DSpace, use the yellow search box at the top of the navigation bar on the left (or the search box in the middle of the home page)</p>
+                <p><img src="/assets/img/searchtop.png" /></p>
+                <p>To limit your search to a specific community or collection, navigate to that community or collection and use the search bar on that page.</p>
+                <p><img src="/assets/img/searchother.png" /></p>
+                <p>DSpace uses the Jakarta Lucene search engine. Here are some search hints:</p>
+                <dl>
+                    <dt>What is searched in the general keyword search (yellow box)</dt>
+                    <dd>
+                        <p>The word(s) you enter in the search box will be searched against the title, author, subject abstract, series, sponsor and identifier fields of each item's record.</p>
+                        <p>If your site is enabled for full-text searching, the text you entered will also be searched against the full text of all archived documents. For more information on full-text searching please contact your DSpace Administrator.</p>
+                    </dd>
+                    <dt>What is not searched - Stop Words</dt>
+                    <dd>
+                        <p>The search engine ignores certain words that occur frequently in English, but do not add value to the search. These are:</p>
+                        <code>"a", "and" , "are" , "as" , "at" , "be" , "but" , "by" , "for" , "if" , "in" , "into", "is" ,"it" ,"no" , "not" , "of" , "on" , "or" , "such", "the" , "to" , "was"</code>
+                    </dd>
+                    <dt>Truncation</dt>
+                    <dd>
+                        <p>Use an asterisk (*) after a word stem to get all hits having words starting with that root, for example:</p>
+                        <p><img src="/assets/img/search1.png" /></p>
+                        <p>will retrieve selects, selector, selectman, selecting.</p>
+                    </dd>
+                </dl>
             </div>
         </div>
     </div>
