@@ -9,36 +9,20 @@ title: "Researcher Profile"
                 <h1>Windl, Otto</h1>
             </div>
             <div class="col-sm-12">
-                <ul class="list-unstyled">
-                    <li><a href=""><i class="fa fa-bar-chart-o"></i> View Statistics</a></li>
-                    <li><i class="fa fa-bell"></i> Email Alert</li>
-                    <li><i class="fa fa-rss"></i> RSS Feed</li>
-                </ul>
+                {% include researcher_admininfo.html %}
+            </div>
+            <div class="col-sm-12">
+                {% include researcher_options.html %}
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <div class="researcher__tabs">
-                    <ul class="nav nav-tabs">
-                        <li role="presentation" class="active"><a href="#">Profile</a></li>
-                        <li role="presentation"><a href="#">Indicators</a></li>
-                        <li role="presentation"><a href="#">Other</a></li>
-                    </ul>
-                </div>
+                {% include researcher_tabs.html %}
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <div class="researcher__profile">
-                    <dl>
-                        <dt>Fullname</dt>
-                        <dd>Windl, Otto</dd>
-                        <dt>Variants</dt>
-                        <dd>Windl, O.</dd>
-                        <dt>Staff Status</dt>
-                        <dd>unigoe</dd>
-                    </dl>
-                </div>
+                {% include researcher_profile.html %}
             </div>
         </div>
         <div class="row">
