@@ -166,7 +166,7 @@ function imgCopyToJekyll() {
 function imgWatch() {
   log "😳 IMG watch"
   ./node_modules/.bin/nodemon \
-    -e jpeg,jpg,png,svg \
+    -e jpeg,jpg,png,svg,gif \
     --watch assets/img/original \
     -x "./bin/img-build.sh"
 }
