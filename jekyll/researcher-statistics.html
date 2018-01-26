@@ -6,14 +6,16 @@ title: "Researcher Statistics"
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h1><span class="glyphicon glyphicon-user"></span> Researcher Profile Statistics: Windl, Otto</h1>
+                <h1>Researcher Profile Statistics: Windl, Otto</h1>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12" style="margin-bottom: 2rem;">
                 {% include researcher-profile-statistics-datepicker.html %}
             </div>
+        </div>
+        <div class="row">
             <div class="col-sm-12">
                 <div class="">
-                    <ul class="nav nav-tabs">
+                    <ul class="nav nav-tabs nav-justified">
                         <li role="presentation" class="active">
                             <a href="#">Profile View</a>
                         </li>
@@ -26,8 +28,10 @@ title: "Researcher Statistics"
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="row">
             <div class="col-sm-12">
-                <h2><i class="fa fa-bell"></i> Alerts</h2>
+                <h2>Alerts</h2>
                 <div class="btn-group" role="group" aria-label="...">
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -65,14 +69,17 @@ title: "Researcher Statistics"
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12">
-                <h2><i class="fa fa-map-marker"></i> Geo Map</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <h2>Geo Map</h2>
                 {% include researcher-profile-statistics-googlemap.html %}
             </div>
-            <div class="col-sm-12">
-                <div class="researcher__tabs">
-                    <ul class="nav nav-tabs">
-                        <li role="presentation" {% if include.content=="1" %}class="active" {% endif %}>
+            <div class="col-xs-12 col-md-8">
+                <div style="margin-bottom: 1rem;">
+                    <h2>Data (visual)</h2>
+                    <ul class="nav nav-tabs nav-justified">
+                        <li role="presentation" class="active">
                             <a href="#">Region</a>
                         </li>
                         <li role="presentation" {% if include.content=="2" %}class="active" {% endif %}>
@@ -86,20 +93,43 @@ title: "Researcher Statistics"
                         </li>
                     </ul>
                 </div>
+                <div class="text-right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-download-alt"></span> Save as <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">PNG</a></li>
+                            <li><a href="#">JPEG</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <svg width="" height="" aria-label="A chart." style="overflow: hidden;"><defs id="defs"></defs><g><rect x="570" y="77" width="228" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="570" y="77" width="228" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="589" y="88.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#000000">EU</text></g><circle cx="577" cy="84" r="7" stroke="none" stroke-width="0" fill="#3366cc"></circle></g></g><g><path d="M468,188.7L468,213.29999999999998A123,98.4,0,0,1,222,213.29999999999998L222,188.7A123,98.4,0,0,0,468,188.7" stroke="#264d99" stroke-width="1" fill="#264d99"></path><ellipse cx="345" cy="188.7" rx="123" ry="98.4" stroke="#3366cc" stroke-width="1" fill="#3366cc"></ellipse><text text-anchor="start" x="335.5" y="193.6" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#ffffff">EU</text></g><g></g></svg>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                {% include researcher_tabs.html content="3" %}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.</p>
+                <h2>Data (table)</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr class="evenRowOddCol">
+                                <th>Region</th>
+                                <th># </th>
+                            </tr>
+                            <tr class="evenRowOddCol">
+                                <td>EU - Europe</td>
+                                <td>16</td>
+                            </tr>
+                            <tr class="evenRowOddCol">
+                                <td><b>Total</b></td>
+                                <td>16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
