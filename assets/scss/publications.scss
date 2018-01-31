@@ -1,0 +1,10 @@
+.publications__search {
+  margin-bottom: 2rem;
+
+  @media (max-width: $screen-xs) {
+    .btn-reset {
+      margin-top: 0.5rem;
+    }
+  }
+
+}
