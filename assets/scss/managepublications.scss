@@ -25,10 +25,24 @@
 }
 
 .manage-publications__pagination {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.manage-publications__pages {
   text-align: center;
 
   @media (min-width: $screen-sm) {
     text-align: right;
+  }
+}
+
+.manage-publications__hit-count {
+  text-align: center;
+
+  @media (min-width: $screen-sm) {
+    text-align: left;
   }
 }
 
@@ -47,5 +61,14 @@
 
   div:last-child {
     padding-left: 1rem;
+  }
+}
+
+.manage-publications__pagination-selector {
+  text-align: center;
+  margin: 22px 0;
+
+  @media (min-width: $screen-sm) {
+    text-align: right;
   }
 }

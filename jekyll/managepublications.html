@@ -37,7 +37,76 @@ title: "Manage Publications"
                             </div>
                         </form>
                     </div>
-                    <div class="col-xs-12 col-sm-6 manage-publications__pagination">
+                    <div class="col-xs-12 col-sm-6 manage-publications__pagination-selector">
+                        <form class="form-inline">
+                            Show
+                            <label for="asdf" class="sr-only">Show X Entries</label>
+                            <select id="asdf" class="form-control">
+                                <option>10</option>
+                                <option>25</option>
+                                <option>50</option>
+                                <option>100</option>
+                            </select>
+                            entries
+                        </form>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <td>Status</td>
+                                <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
+                                <td>Title</td>
+                                <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></button></td>
+                                <td>Contributors</td>
+                                <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
+                                <td>Date issued</td>
+                                <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
+                                <td>Publication <span class="no-break">Type</span></td>
+                                <td class="text-right"><button class="btn btn-link btn-xs" disabled="disabled"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
+                                <td>Actions</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="text-center"><div class="alert alert-info" role="alert">S</div></td>
+                                <td colspan="2">Mediality and materiality in religious performance: religion as heritage in Mauritius</td>
+                                <td colspan="2">Eisenlohr, Patrick</td>
+                                <td colspan="2">2013</td>
+                                <td colspan="2">journal_article</td>
+                                <td>
+                                    <div class="btn-group-vertical" role="group" aria-label="...">
+                                        <button class="btn btn-md btn-warning">Active</button>
+                                        <button class="btn btn-md btn-primary">Selected</button>
+                                        <button class="btn btn-md btn-info">Hide</button>
+                                        <button class="btn btn-md btn-danger">Undo</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center"><div class="alert alert-danger" role="alert">A</div></td>
+                                <td colspan="2">Reconsidering mediatization of religion: Islamic televangelism in India</td>
+                                <td colspan="2">Cuchillo, H. M., Eisenlohr, Patrick</td>
+                                <td colspan="2">2010</td>
+                                <td colspan="2">book</td>
+                                <td>
+                                    <div class="btn-group-vertical" role="group" aria-label="...">
+                                        <button class="btn btn-md btn-warning">Active</button>
+                                        <button class="btn btn-md btn-primary">Selected</button>
+                                        <button class="btn btn-md btn-info">Hide</button>
+                                        <button class="btn btn-md btn-danger">Undo</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row manage-publications__pagination">
+                    <div class="col-xs-12 col-sm-6 manage-publications__hit-count">
+                        <p>Showing 1 to 10 of 135 entries</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 manage-publications__pages">
                         <nav aria-label="Page navigation">
                             <ul class="pagination">
                                 <li class="disabled">
@@ -63,98 +132,50 @@ title: "Manage Publications"
                         </nav>
                     </div>
                 </div>
-                <div class="table-responsive">
-                <table class="table table-condensed">
-                    <thead>
-                        <tr>
-                            <td>Status</td>
-                            <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
-                            <td>Title</td>
-                            <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></button></td>
-                            <td>Contributors</td>
-                            <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
-                            <td>Date issued</td>
-                            <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
-                            <td>Publication <span class="no-break">Type</span></td>
-                            <td class="text-right"><button class="btn btn-link btn-xs" disabled="disabled"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
-                            <td>Actions</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="2" class="text-center"><div class="alert alert-info" role="alert">S</div></td>
-                            <td colspan="2">Mediality and materiality in religious performance: religion as heritage in Mauritius</td>
-                            <td colspan="2">Eisenlohr, Patrick</td>
-                            <td colspan="2">2013</td>
-                            <td colspan="2">journal_article</td>
-                            <td>
-                                <div class="btn-group-vertical" role="group" aria-label="...">
-                                    <button class="btn btn-md btn-warning">Active</button>
-                                    <button class="btn btn-md btn-primary">Selected</button>
-                                    <button class="btn btn-md btn-info">Hide</button>
-                                    <button class="btn btn-md btn-danger">Undo</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="text-center"><div class="alert alert-danger" role="alert">A</div></td>
-                            <td colspan="2">Reconsidering mediatization of religion: Islamic televangelism in India</td>
-                            <td colspan="2">Cuchillo, H. M., Eisenlohr, Patrick</td>
-                            <td colspan="2">2010</td>
-                            <td colspan="2">book</td>
-                            <td>
-                                <div class="btn-group-vertical" role="group" aria-label="...">
-                                    <button class="btn btn-md btn-warning">Active</button>
-                                    <button class="btn btn-md btn-primary">Selected</button>
-                                    <button class="btn btn-md btn-info">Hide</button>
-                                    <button class="btn btn-md btn-danger">Undo</button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 manage-publications__selected-publications">
-                <h2>Selected Publications</h2>
-                <div class="panel panel-default">
-                    <div class="panel-heading selected-publications--item-header">
-                        <div>
-                            1.
-                        </div>
-                        <div>
-                            Reconsidering mediatization of religion: Islamic televangelism in India
-                        </div>
-                        <div>
-                            <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-resize-vertical"></span></button>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        Eisenlohr, Patrick<br>
-                        2016<br>
-                        journal_article
-                    </div>
-                </div>
-                <div class="panel panel-default">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 manage-publications__selected-publications">
+                    <h2>Selected Publications</h2>
+                    <div class="panel panel-default">
                         <div class="panel-heading selected-publications--item-header">
-                                <div>
-                                    2.
-                                </div>
-                                <div>
-                                    Lorem ipsum dolor sit amut.
-                                </div>
-                                <div>
-                                    <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-resize-vertical"></span></button>
-                                </div>
+                            <div>
+                                1.
                             </div>
-                    <div class="panel-body">
-                        Eisenlohr, Patrick<br>
-                        2016<br>
-                        journal_article
+                            <div>
+                                Reconsidering mediatization of religion: Islamic televangelism in India
+                            </div>
+                            <div>
+                                <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-resize-vertical"></span></button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            Eisenlohr, Patrick<br>
+                            2016<br>
+                            journal_article
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                            <div class="panel-heading selected-publications--item-header">
+                                    <div>
+                                        2.
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amut.
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-resize-vertical"></span></button>
+                                    </div>
+                                </div>
+                        <div class="panel-body">
+                            Eisenlohr, Patrick<br>
+                            2016<br>
+                            journal_article
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-xs-12">
                 <h2>Changes</h2>
