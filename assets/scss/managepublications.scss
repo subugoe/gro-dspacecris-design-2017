@@ -1,0 +1,25 @@
+.manage-publications__selected-publications {
+
+}
+
+.selected-publications--item-header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  div:first-child {
+    width: 30px;
+    font-weight: bold;
+  }
+
+  div:nth-child(2) {
+    flex: 1;
+    font-weight: bold;
+  }
+
+  div:last-child {
+    width: 50px;
+    text-align: right;
+
+  }
+}

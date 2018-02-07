@@ -25,59 +25,96 @@ title: "Manage Publications"
         <div class="row">
             <div class="col-xs-12 col-sm-8">
                 <h2>All your Publications</h2>
-                <table class="table">
+                <div class="table-responsive">
+                <table class="table table-condensed">
                     <thead>
                         <tr>
-                            <td></td>
+                            <td>Status</td>
+                            <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
                             <td>Title</td>
+                            <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></button></td>
                             <td>Contributors</td>
+                            <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
                             <td>Date issued</td>
-                            <td>Publication Type</td>
+                            <td class="text-right"><button class="btn btn-link btn-xs"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
+                            <td>Publication <span class="no-break">Type</span></td>
+                            <td class="text-right"><button class="btn btn-link btn-xs" disabled="disabled"><span class="glyphicon glyphicon-sort-by-attributes"></span></button></td>
                             <td>Actions</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><div class="alert alert-info" role="alert">S</div></td>
-                            <td>Mediality and materiality in religious performance: religion as heritage in Mauritius</td>
-                            <td>Eisenlohr, Patrick</td>
-                            <td>2013</td>
-                            <td>journal_article</td>
+                            <td colspan="2" class="text-center"><div class="alert alert-info" role="alert">S</div></td>
+                            <td colspan="2">Mediality and materiality in religious performance: religion as heritage in Mauritius</td>
+                            <td colspan="2">Eisenlohr, Patrick</td>
+                            <td colspan="2">2013</td>
+                            <td colspan="2">journal_article</td>
                             <td>
                                 <div class="btn-group-vertical" role="group" aria-label="...">
-                                    <button class="btn btn-md btn-primary">A</button>
-                                    <button class="btn btn-md btn-info">H</button>
-                                    <button class="btn btn-md btn-danger">U</button>
+                                    <button class="btn btn-md btn-warning">Active</button>
+                                    <button class="btn btn-md btn-primary">Selected</button>
+                                    <button class="btn btn-md btn-info">Hide</button>
+                                    <button class="btn btn-md btn-danger">Undo</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td><div class="alert alert-danger" role="alert">A</div></td>
-                            <td>Reconsidering mediatization of religion: Islamic televangelism in India</td>
-                            <td>Cuchillo, H. M., Eisenlohr, Patrick</td>
-                            <td>2010</td>
-                            <td>book</td>
-                            <td><button class="btn btn-xs btn-default">asdf</button></td>
+                            <td colspan="2" class="text-center"><div class="alert alert-danger" role="alert">A</div></td>
+                            <td colspan="2">Reconsidering mediatization of religion: Islamic televangelism in India</td>
+                            <td colspan="2">Cuchillo, H. M., Eisenlohr, Patrick</td>
+                            <td colspan="2">2010</td>
+                            <td colspan="2">book</td>
+                            <td>
+                                <div class="btn-group-vertical" role="group" aria-label="...">
+                                    <button class="btn btn-md btn-warning">Active</button>
+                                    <button class="btn btn-md btn-primary">Selected</button>
+                                    <button class="btn btn-md btn-info">Hide</button>
+                                    <button class="btn btn-md btn-danger">Undo</button>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            </div>
+            <div class="col-xs-12 col-sm-4 manage-publications__selected-publications">
                 <h2>Selected Publications</h2>
-                <ol>
-                    <li>
-                        Reconsidering mediatization of religion: Islamic televangelism in India<br>
+                <div class="panel panel-default">
+                    <div class="panel-heading selected-publications--item-header">
+                        <div>
+                            1.
+                        </div>
+                        <div>
+                            Reconsidering mediatization of religion: Islamic televangelism in India
+                        </div>
+                        <div>
+                            <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-resize-vertical"></span></button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
                         Eisenlohr, Patrick<br>
                         2016<br>
                         journal_article
-                    </li>
-                    <li>
-                        Media, Citizenship, and Religious Mobilization: The Muharram Awareness Campaign in Mumbai<br>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                        <div class="panel-heading selected-publications--item-header">
+                                <div>
+                                    2.
+                                </div>
+                                <div>
+                                    Lorem ipsum dolor sit amut.
+                                </div>
+                                <div>
+                                    <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-resize-vertical"></span></button>
+                                </div>
+                            </div>
+                    <div class="panel-body">
                         Eisenlohr, Patrick<br>
                         2016<br>
                         journal_article
-                    </li>
-                </ol>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
