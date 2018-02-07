@@ -19,12 +19,50 @@ title: "Manage Publications"
                     <li><strong>Change state:</strong> For any publication entry, you may change the state by clicking on the state icon, A, H, S, or U.</li>
                     <li><strong>Filter:</strong> You may use the Filter to search through your publications.</li>
                 </ol>
-                <p>Please remember to click "Submit" after making changes.</p>
+                <p>Please remember to click "Save changes" after making changes.</p>
+                <p><a href="#0"><span class="glyphicon glyphicon-user"></span> My Researcher Profile</a></p>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-8">
                 <h2>All your Publications</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 manage-publications__search">
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Terms" style="width: 100%;">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span> Search</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 manage-publications__pagination">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="disabled">
+                                    <a href="#0" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#0">2</a>
+                                </li>
+                                <li>
+                                    <a href="#0">3</a>
+                                </li>
+                                <li>
+                                    <a href="#0" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
                 <div class="table-responsive">
                 <table class="table table-condensed">
                     <thead>
@@ -121,6 +159,32 @@ title: "Manage Publications"
             <div class="col-xs-12">
                 <h2>Changes</h2>
                 <div class="alert alert-info" role="alert">No changes are made yet</div>
+                <ul class="list-unstyled manage-publications__list-of-changes">
+                    <li>
+                        <div>
+                            <div class="alert alert-info" role="alert">A</div>
+                        </div>
+                        <div>
+                            Mediality and materiality in religious performance: religion as heritage in Mauritius<br>
+                            Eisenlohr, Patrick<br>
+                            2013<br>
+                            journal_article
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="alert alert-danger" role="alert">S</div>
+                        </div>
+                        <div>
+                            Mediality and materiality in religious performance: religion as heritage in Mauritius<br>
+                            Eisenlohr, Patrick<br>
+                            2013<br>
+                            journal_article
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn-success">Save changes</button>
+                <button class="btn btn-danger">Reject changes</button>
             </div>
         </div>
     </div>
