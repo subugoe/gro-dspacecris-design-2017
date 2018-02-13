@@ -1,0 +1,12 @@
+.researchers__table {
+  thead {
+    th:nth-child(2) {
+      display: none;
+    }
+  }
+  tbody {
+    td:nth-child(2) {
+      display: none;
+    }
+  }
+}
