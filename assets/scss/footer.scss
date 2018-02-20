@@ -19,3 +19,12 @@ footer {
     padding-top: 16px;
   }
 }
+
+.footer__totop {
+  text-align: right;
+
+  .btn-link,
+  .btn-link:hover {
+    text-decoration: none;
+  }
+}
