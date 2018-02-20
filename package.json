@@ -75,6 +75,7 @@
     "prenetlify": "./bin/prenetlify.sh",
     "netlify": "./bin/netlify.sh",
     "predev": "./bin/predev.sh",
-    "dev": "./bin/dev.sh"
+    "dev": "./bin/dev.sh",
+    "sassdoc": "./bin/sassdoc.sh"
   }
 }

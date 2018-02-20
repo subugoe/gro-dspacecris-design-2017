@@ -24,8 +24,17 @@ function browsersyncStart() {
 }
 
 
+function sassdoc() {
+  log "Sassdoc"
+  node_modules/.bin/sassdoc  \
+    ./assets/scss/*.scss \
+    -d jekyll/sassdoc
+}
 
-
+function sassdocCleanup() {
+  log "🗑️ Sassdoc Clean-Up"
+  rm -rf ./jekyll/sassdoc/*
+}
 
 function cssCleanup() {
   log "🗑️ CSS Clean-Up"
