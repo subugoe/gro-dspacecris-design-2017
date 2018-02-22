@@ -1,15 +1,9 @@
-/**
- * @todo Testing Title
- * @body Testing Body
- */
-
 /// Primary
 /// <br><img src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><rect fill="#1a3771" x="0" y="0" width="100%" height="100%"/></svg>'>
 /// @group Colors
 /// @type String
 /// @author Nils Windisch
 $brand-primary: #1a3771;
-
 $navbar-default-bg: $brand-primary;
 $navbar-inverse-bg: $brand-primary;
 $navbar-default-link-color: white;
@@ -23,7 +17,9 @@ $navbar-inverse-link-hover-bg: transparent;
 /// @group Typography
 /// @type String
 /// @author Nils Windisch
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
 
 /// Base Font Size
 /// @group Typography
@@ -31,9 +27,7 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 /// @author Nils Windisch
 $font-size-base: 16px;
 
-
 $border-radius-base: 0;
 $btn-border-radius-large: 0;
 $btn-border-radius-small: 0;
-
 // $input-border-focus:
