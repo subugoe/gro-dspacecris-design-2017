@@ -7,14 +7,14 @@
 
 
 function browsersyncReload() {
-  log "🏁 BROWSERSYNC reload"
+  log "🏁  BROWSERSYNC reload"
   ./node_modules/.bin/browser-sync \
     reload \
     --url http://${npm_package_config_url}:${npm_package_config_browsersync_port}
 }
 
 function browsersyncStart() {
-  log "🎬 BROWSERSYNC start"
+  log "🎬  BROWSERSYNC start"
   ./node_modules/.bin/browser-sync \
     start \
     -c ./browsersync.json \
@@ -32,29 +32,29 @@ function sassdoc() {
 }
 
 function sassdocCleanup() {
-  log "🗑️ Sassdoc Clean-Up"
+  log "🗑️  Sassdoc Clean-Up"
   rm -rf ./jekyll/sassdoc/*
 }
 
 function cssCleanup() {
-  log "🗑️ CSS Clean-Up"
+  log "🗑️  CSS Clean-Up"
   rm -r ./assets/css/*
 }
 
 function cssNano() {
   if [ "$npm_package_config_css_nano_active" = "true" ]; then
-    log "🏗️ CSS Nano"
+    log "🏗️  CSS Nano"
     ./node_modules/.bin/csso \
       ./assets/css/style.css \
       ./assets/css/style.css
   else
-    log "🏗️ (CSS Nano deactived)"
+    log "🏗️  (CSS Nano deactived)"
   fi
 }
 
 function cssPrefix() {
   if [ "$npm_package_config_css_prefix_active" = "true" ]; then
-    log "🏗️ CSS Prefix"
+    log "🏗️  CSS Prefix"
     ./node_modules/.bin/postcss \
       ./assets/css/style.css \
       -m \
@@ -62,33 +62,33 @@ function cssPrefix() {
       -b "${npm_package_config_css_prefix_versions}" \
       -o ./assets/css/style.css
   else
-    log "🏗️ (CSS Prefix deactived)"
+    log "🏗️  (CSS Prefix deactived)"
   fi
 }
 
 function cssFontvalues() {
   if [ "$npm_package_config_css_fontvalues_active" = "true" ]; then
-    log "🏗️ CSS Font Values"
+    log "🏗️  CSS Font Values"
     ./node_modules/.bin/postcss \
       ./assets/css/style.css \
       -m \
       -u postcss-minify-font-values \
       -o ./assets/css/style.css
   else
-    log "🏗️ (CSS Font Values deactivated)"
+    log "🏗️  (CSS Font Values deactivated)"
   fi
 }
 
 function cssCalc() {
   if [ "$npm_package_config_css_calc_active" = "true" ]; then
-    log "🏗️ CSS Calc"
+    log "🏗️  CSS Calc"
     ./node_modules/.bin/postcss \
       ./assets/css/style.css \
       -m \
       -u postcss-calc \
       -o ./assets/css/style.css
   else
-    log "🏗️ (CSS Calc deactivated)"
+    log "🏗️  (CSS Calc deactivated)"
   fi
 }
 
@@ -101,12 +101,12 @@ function cssObjectfit() {
       -u postcss-object-fit-images \
       -o ./assets/css/style.css
   else
-    log "🏗️ (CSS Objectfit deactivated)"
+    log "🏗️  (CSS Objectfit deactivated)"
   fi
 }
 
 function cssCopyToJekyll() {
-  log "🏗️ CSS copy to jekyll"
+  log "🏗️  CSS copy to jekyll"
   mkdir ./jekyll/assets/css
   cp ./assets/css/style.css ./jekyll/assets/css/style.css
   cp ./assets/css/style.css.map ./jekyll/assets/css/style.css.map
@@ -117,7 +117,7 @@ function cssCopyToJekyll() {
 
 
 function distCleanup() {
-  log "🗑️ DIST Clean-Up"
+  log "🗑️  DIST Clean-Up"
   rm -rf dist
 }
 
@@ -133,14 +133,14 @@ function imgBuild() {
 
 function imgOptimize() {
   mkdir ./assets/img/optimized/
-  log "🏗️ IMG optimize JPG"
+  log "🏗️  IMG optimize JPG"
   # JPG
   ./node_modules/.bin/imagemin \
     ./assets/img/original/**.{jpg,jpeg} \
     --out-dir=./assets/img/optimized/
 
   # SVG
-  log "🏗️ IMG optimize SVG"
+  log "🏗️  IMG optimize SVG"
   ./node_modules/.bin/imagemin \
     ./assets/img/original/**.svg \
     --plugin=svgo \
