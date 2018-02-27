@@ -10,3 +10,9 @@
     }
   }
 }
+
+.researchers__search-input {
+  @media (min-width: $screen-sm) {
+    width: 75%;
+  }
+}
