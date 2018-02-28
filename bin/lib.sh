@@ -270,7 +270,7 @@ function scssBuildDist() {
 }
 
 function scssProcess() {
-  log "🏗️ SCSS Process"
+  log "🏗️  SCSS Process"
   ./node_modules/.bin/node-sass \
     ./assets/scss/style.scss \
     --output-style expanded \
