@@ -7,7 +7,7 @@ if [ -n "$1" ]; then
   BY="📦 $1"
 fi
 
-log "🏗 Jekyll Build [DEV, NETLIFY] $BY"
+log "🏗  Jekyll Build [DEV, NETLIFY] $BY"
 
 bundle exec \
   jekyll build \

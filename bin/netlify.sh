@@ -3,10 +3,10 @@
 
 source ./bin/lib.sh
 
-log "🎬 Dist start"
+log "🎬  Dist start"
 
 imgBuild
 scssBuildDist
 jekyllBuildNetlify
 
-log "🏁 Dist done"
+log "🏁  Dist done"

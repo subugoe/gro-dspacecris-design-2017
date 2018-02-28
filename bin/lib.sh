@@ -147,7 +147,7 @@ function imgOptimize() {
     --out-dir=./assets/img/optimized/
 
   # PNG
-  log "🏗 IMG optimize PNG"
+  log "🏗  IMG optimize PNG"
   ./node_modules/.bin/imagemin \
     ./assets/img/original/**.png \
     --plugin=pngcrush \
@@ -156,24 +156,24 @@ function imgOptimize() {
 
 function imgMakeWebp() {
   if [ "$npm_package_config_img_webp_active" = "true" ]; then
-    log "🏗️ IMG make WebP"
+    log "🏗️  IMG make WebP"
     ./node_modules/.bin/imagemin \
       ./assets/img/original/**.{jpg,jpeg} \
       --plugin=webp \
       --out-dir=./assets/img/optimized/
   else
-    log "🏗️ (IMG make WebP deactivated)"
+    log "🏗️  (IMG make WebP deactivated)"
   fi
 }
 
 function imgCopyToJekyll() {
-  log "🏗️ IMG copy to jekyll"
+  log "🏗️  IMG copy to jekyll"
   mkdir ./jekyll/assets/img
   cp ./assets/img/optimized/**.* ./jekyll/assets/img
 }
 
 function imgWatch() {
-  log "😳 IMG watch"
+  log "😳  IMG watch"
   ./node_modules/.bin/nodemon \
     -e jpeg,jpg,png,svg,gif \
     --watch assets/img/original \
@@ -181,7 +181,7 @@ function imgWatch() {
 }
 
 function imgCleanup() {
-  log "🗑️ IMG Clean-Up"
+  log "🗑️  IMG Clean-Up"
   rm -r ./assets/img/optimized/*
 }
 
@@ -190,34 +190,34 @@ function imgCleanup() {
 
 
 function jekyllBuildDist() {
-  log "🏗️ JEKYLL build [DIST]"
+  log "🏗️  JEKYLL build [DIST]"
   bundle exec \
     jekyll build \
     --config jekyll_config_base.yml,jekyll_config_dist.yml
 }
 
 function jekyllBuildNetlify() {
-  log "🏗️ JEKYLL build [NETLIFY]"
+  log "🏗️  JEKYLL build [NETLIFY]"
   bundle exec \
     jekyll build \
     --config jekyll_config_base.yml,jekyll_config_netlify.yml
 }
 
 function jekyllBuildDev() {
-  log "🏗️ JEKYLL build [DEV]"
+  log "🏗️  JEKYLL build [DEV]"
   bundle exec \
     jekyll build \
     --config jekyll_config_base.yml
 }
 
 function jekyllCleanup() {
-  log "🗑️ JEKYLL Clean-Up"
+  log "🗑️  JEKYLL Clean-Up"
   rm -r ./jekyll/assets/img/*
   rm -r ./jekyll/assets/css/*
 }
 
 function jekyllWatchDev() {
-  log "😳 JEKYLL watch"
+  log "😳  JEKYLL watch"
   ./node_modules/.bin/nodemon \
     -e md,html,css,js,png,jpg,jpeg,svg \
     --watch jekyll \
@@ -235,7 +235,7 @@ function log() {
 function logCleanup() {
   rm ./log.log
   touch log.log
-  log "🗑️ LOG Clean-Up"
+  log "🗑️  LOG Clean-Up"
 }
 
 
@@ -243,7 +243,7 @@ function logCleanup() {
 
 
 function scssWatchDev() {
-  log "😳 SCSS watch"
+  log "😳  SCSS watch"
   ./node_modules/.bin/nodemon \
     -e scss \
     --watch assets/scss \
@@ -283,6 +283,6 @@ function scssProcess() {
 
 
 function serveCleanup() {
-  log "🗑️ SERVE Clean-Up"
+  log "🗑️  SERVE Clean-Up"
   rm -r ./serve/*
 }
