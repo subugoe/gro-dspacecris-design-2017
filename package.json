@@ -12,12 +12,14 @@
     "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.23.6",
     "cssnano": "^3.10",
+    "csso": "^3.5.0",
+    "csso-cli": "^1.1.0",
     "imagemin-cli": "^3.0",
     "imagemin-pngcrush": "^5.1",
     "imagemin-svgo": "^6.0",
     "imagemin-webp": "^4.0",
     "node-sass": "^4.7",
-    "nodemon": "^1.15.1",
+    "nodemon": "^1.17.1",
     "ntl": "^1.2",
     "postcss": "^6.0.19",
     "postcss-calc": "^6.0",
@@ -46,10 +48,10 @@
       "calc": {
         "active": true
       },
-      "nano": {
       "customproperties": {
         "active": true
       },
+      "o": {
         "active": true
       },
       "prefix": {

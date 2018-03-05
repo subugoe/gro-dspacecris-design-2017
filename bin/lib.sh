@@ -38,14 +38,14 @@ function cssCleanup() {
   rm -r ./assets/css/*
 }
 
-function cssNano() {
-  if [ "$npm_package_config_css_nano_active" = "true" ]; then
-    log "🏗️  CSS Nano"
+function cssO() {
+  if [ "$npm_package_config_css_o_active" = "true" ]; then
+    log "🏗️  CSSO"
     ./node_modules/.bin/csso \
       ./assets/css/style.css \
       ./assets/css/style.css
   else
-    log "🏗️  (CSS Nano deactived)"
+    log "🏗️  (CSSO deactived)"
   fi
 }
 
@@ -281,8 +281,8 @@ function scssBuildDist() {
   cssCalc
   cssFontvalues
   cssObjectfit
-  cssNano
   cssCustomproperties
+  cssO
   cssCopyToJekyll
 }
 
