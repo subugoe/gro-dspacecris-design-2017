@@ -1,0 +1,6 @@
+@media (inverted-colors) {
+  img[src*="png"],
+  img[src*="jpg"] {
+    filter: invert(100%);
+  }
+}
