@@ -3,9 +3,6 @@
 # shellcheck disable=SC2086
 
 
-
-
-
 function browsersyncReload() {
   log "🏁  BROWSERSYNC reload"
   ./node_modules/.bin/browser-sync \
@@ -60,7 +57,8 @@ function cssPrefix() {
       -m \
       -u autoprefixer \
       -b "${npm_package_config_css_prefix_versions}" \
-      -o ./assets/css/style.css
+      -o ./assets/css/style.css \
+      --verbose
   else
     log "🏗️  (CSS Prefix deactived)"
   fi
@@ -73,7 +71,8 @@ function cssFontvalues() {
       ./assets/css/style.css \
       -m \
       -u postcss-minify-font-values \
-      -o ./assets/css/style.css
+      -o ./assets/css/style.css \
+      --verbose
   else
     log "🏗️  (CSS Font Values deactivated)"
   fi
@@ -86,7 +85,8 @@ function cssCalc() {
       ./assets/css/style.css \
       -m \
       -u postcss-calc \
-      -o ./assets/css/style.css
+      -o ./assets/css/style.css \
+      --verbose
   else
     log "🏗️  (CSS Calc deactivated)"
   fi
@@ -99,7 +99,8 @@ function cssObjectfit() {
       ./assets/css/style.css \
       -m \
       -u postcss-object-fit-images \
-      -o ./assets/css/style.css
+      -o ./assets/css/style.css \
+      --verbose
   else
     log "🏗️  (CSS Objectfit deactivated)"
   fi
