@@ -92,6 +92,20 @@ function cssCalc() {
   fi
 }
 
+function cssCustomproperties() {
+  if [ "$npm_package_config_css_customproperties_active" = "true" ]; then
+    log "🏗️  CSS Custom Properties"
+    ./node_modules/.bin/postcss \
+      ./assets/css/style.css \
+      -m \
+      -u postcss-custom-properties \
+      -o ./assets/css/style.css \
+      --verbose
+  else
+    log "🏗️  (CSS Custom Properties deactivated)"
+  fi
+}
+
 function cssObjectfit() {
   if [ "$npm_package_config_css_objectfit_active" = "true" ]; then
     log "🏗️ CSS Objectfit"
@@ -257,6 +271,7 @@ function scssBuildDev() {
   cssCalc
   cssFontvalues
   cssObjectfit
+  cssCustomproperties
   cssCopyToJekyll
 }
 
@@ -267,6 +282,7 @@ function scssBuildDist() {
   cssFontvalues
   cssObjectfit
   cssNano
+  cssCustomproperties
   cssCopyToJekyll
 }
 
