@@ -13,7 +13,7 @@
 
 * browser-sync
 * concurrently
-* cssnano
+* csso
 * doiuse
 * node-notifier-cli
 * [node-sass](https://www.npmjs.com/package/node-sass)
@@ -25,6 +25,6 @@
 * [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 * postcss-minify-font-values
 
-# Todo
+## Todo
 
 * use ```rimraf``` instead of ```rm``` https://www.npmjs.com/package/rimraf
