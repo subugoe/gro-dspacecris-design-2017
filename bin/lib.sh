@@ -120,6 +120,20 @@ function cssObjectfit() {
   fi
 }
 
+function cssSelectornot() {
+  if [ "$npm_package_config_css_selectornot_active" = "true" ]; then
+    log "🏗️  CSS Selector Not"
+    ./node_modules/.bin/postcss \
+      ./assets/css/style.css \
+      -m \
+      -u postcss-selector-not \
+      -o ./assets/css/style.css \
+      --verbose
+  else
+    log "🏗️  (CSS Selector Not deactivated)"
+  fi
+}
+
 function cssCopyToJekyll() {
   log "🏗️  CSS copy to jekyll"
   mkdir ./jekyll/assets/css
@@ -271,6 +285,7 @@ function scssBuildDev() {
   cssCalc
   cssFontvalues
   cssObjectfit
+  cssSelectornot
   cssCustomproperties
   cssCopyToJekyll
 }
@@ -281,6 +296,7 @@ function scssBuildDist() {
   cssCalc
   cssFontvalues
   cssObjectfit
+  cssSelectornot
   cssCustomproperties
   cssO
   cssCopyToJekyll
