@@ -7,7 +7,6 @@ source ./bin/lib/postcss.sh
 source ./bin/lib/image.sh
 source ./bin/lib/jekyll.sh
 
-
 function sassdoc() {
   log "Sassdoc"
   node_modules/.bin/sassdoc  \
@@ -32,18 +31,10 @@ function cssCopyToJekyll() {
   cp ./assets/css/style.css.map ./jekyll/assets/css/style.css.map
 }
 
-
-
-
-
 function distCleanup() {
   log "🗑️  DIST Clean-Up"
   rm -rf dist
 }
-
-
-
-
 
 function log() {
   echo "$1 | $(date '+%Y-%m-%d %H:%M:%S')" >> ./${npm_package_config_log_file}
@@ -54,10 +45,6 @@ function logCleanup() {
   touch log.log
   log "🗑️  LOG Clean-Up"
 }
-
-
-
-
 
 function scssWatchDev() {
   log "😳  SCSS watch"
@@ -98,10 +85,6 @@ function scssProcess() {
     --source-map true \
     -o ./assets/css/
 }
-
-
-
-
 
 function serveCleanup() {
   log "🗑️  SERVE Clean-Up"
