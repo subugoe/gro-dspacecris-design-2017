@@ -45,7 +45,7 @@
         "active": true
       }
     },
-    "css": {
+    "postcss": {
       "calc": {
         "active": true
       },

@@ -38,20 +38,20 @@ function cssCleanup() {
   rm -r ./assets/css/*
 }
 
-function cssO() {
-  if [ "$npm_package_config_css_o_active" = "true" ]; then
-    log "🏗️  CSSO"
+function postcssO() {
+  if [ "$npm_package_config_postcss_o_active" = "true" ]; then
+    log "🏗️  PostCSS CSSO"
     ./node_modules/.bin/csso \
       ./assets/css/style.css \
       ./assets/css/style.css
   else
-    log "🏗️  (CSSO deactived)"
+    log "🏗️  (PostCSS CSSO deactived)"
   fi
 }
 
-function cssPrefix() {
-  if [ "$npm_package_config_css_prefix_active" = "true" ]; then
-    log "🏗️  CSS Prefix"
+function postcssPrefix() {
+  if [ "$npm_package_config_postcss_prefix_active" = "true" ]; then
+    log "🏗️  PostCSS Prefix"
     ./node_modules/.bin/postcss \
       ./assets/css/style.css \
       -m \
@@ -60,13 +60,13 @@ function cssPrefix() {
       -o ./assets/css/style.css \
       --verbose
   else
-    log "🏗️  (CSS Prefix deactived)"
+    log "🏗️  (PostCSS Prefix deactived)"
   fi
 }
 
-function cssFontvalues() {
-  if [ "$npm_package_config_css_fontvalues_active" = "true" ]; then
-    log "🏗️  CSS Font Values"
+function postcssFontvalues() {
+  if [ "$npm_package_config_postcss_fontvalues_active" = "true" ]; then
+    log "🏗️  PostCSS Font Values"
     ./node_modules/.bin/postcss \
       ./assets/css/style.css \
       -m \
@@ -74,13 +74,13 @@ function cssFontvalues() {
       -o ./assets/css/style.css \
       --verbose
   else
-    log "🏗️  (CSS Font Values deactivated)"
+    log "🏗️  (PostCSS Font Values deactivated)"
   fi
 }
 
-function cssCalc() {
-  if [ "$npm_package_config_css_calc_active" = "true" ]; then
-    log "🏗️  CSS Calc"
+function postcssCalc() {
+  if [ "$npm_package_config_postcss_calc_active" = "true" ]; then
+    log "🏗️  PostCSS Calc"
     ./node_modules/.bin/postcss \
       ./assets/css/style.css \
       -m \
@@ -88,13 +88,13 @@ function cssCalc() {
       -o ./assets/css/style.css \
       --verbose
   else
-    log "🏗️  (CSS Calc deactivated)"
+    log "🏗️  (PostCSS Calc deactivated)"
   fi
 }
 
-function cssCustomproperties() {
-  if [ "$npm_package_config_css_customproperties_active" = "true" ]; then
-    log "🏗️  CSS Custom Properties"
+function postcssCustomproperties() {
+  if [ "$npm_package_config_postcss_customproperties_active" = "true" ]; then
+    log "🏗️  PostCSS Custom Properties"
     ./node_modules/.bin/postcss \
       ./assets/css/style.css \
       -m \
@@ -102,13 +102,13 @@ function cssCustomproperties() {
       -o ./assets/css/style.css \
       --verbose
   else
-    log "🏗️  (CSS Custom Properties deactivated)"
+    log "🏗️  (PostCSS Custom Properties deactivated)"
   fi
 }
 
-function cssObjectfit() {
-  if [ "$npm_package_config_css_objectfit_active" = "true" ]; then
-    log "🏗️ CSS Objectfit"
+function postcssObjectfit() {
+  if [ "$npm_package_config_postcss_objectfit_active" = "true" ]; then
+    log "🏗️  PostCSS Objectfit"
     ./node_modules/.bin/postcss \
       ./assets/css/style.css \
       -m \
@@ -116,13 +116,13 @@ function cssObjectfit() {
       -o ./assets/css/style.css \
       --verbose
   else
-    log "🏗️  (CSS Objectfit deactivated)"
+    log "🏗️  (PostCSS Objectfit deactivated)"
   fi
 }
 
-function cssSelectornot() {
-  if [ "$npm_package_config_css_selectornot_active" = "true" ]; then
-    log "🏗️  CSS Selector Not"
+function postcssSelectornot() {
+  if [ "$npm_package_config_postcss_selectornot_active" = "true" ]; then
+    log "🏗️  PostCSS Selector Not"
     ./node_modules/.bin/postcss \
       ./assets/css/style.css \
       -m \
@@ -130,7 +130,7 @@ function cssSelectornot() {
       -o ./assets/css/style.css \
       --verbose
   else
-    log "🏗️  (CSS Selector Not deactivated)"
+    log "🏗️  (PostCSS Selector Not deactivated)"
   fi
 }
 
@@ -281,24 +281,24 @@ function scssWatchDev() {
 
 function scssBuildDev() {
   scssProcess
-  cssPrefix
-  cssCalc
-  cssFontvalues
-  cssObjectfit
-  cssSelectornot
-  cssCustomproperties
+  postcssPrefix
+  postcssCalc
+  postcssFontvalues
+  postcssObjectfit
+  postcssSelectornot
+  postcssCustomproperties
   cssCopyToJekyll
 }
 
 function scssBuildDist() {
   scssProcess
-  cssPrefix
-  cssCalc
-  cssFontvalues
-  cssObjectfit
-  cssSelectornot
-  cssCustomproperties
-  cssO
+  postcssPrefix
+  postcssCalc
+  postcssFontvalues
+  postcssObjectfit
+  postcssSelectornot
+  postcssCustomproperties
+  postcssO
   cssCopyToJekyll
 }
 
