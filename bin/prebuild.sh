@@ -4,7 +4,7 @@
 source ./bin/lib.sh
 
 logCleanup
-distCleanup
+buildCleanup
 jekyllCleanup
 imgCleanup
-mkdir dist
+mkdir build

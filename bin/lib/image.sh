@@ -54,6 +54,7 @@ function imgWatch() {
   ./node_modules/.bin/nodemon \
     -e jpeg,jpg,png,svg,gif \
     --watch assets/img/original \
+    --verbose \
     -x "./bin/img-build.sh"
 }
 

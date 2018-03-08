@@ -1,6 +1,10 @@
 #!/bin/bash
 # shellcheck disable=SC1091
 
+source ./.env
+export MODE="development"
 source ./bin/lib.sh
 
-browsersyncStart & imgWatch & scssWatchDev & jekyllWatchDev
+log "🎬  DEV start"
+
+browsersyncStart & imgWatch & scssWatch & jekyllWatch

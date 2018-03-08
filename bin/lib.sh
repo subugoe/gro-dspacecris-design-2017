@@ -31,9 +31,9 @@ function cssCopyToJekyll() {
   cp ./assets/css/style.css.map ./jekyll/assets/css/style.css.map
 }
 
-function distCleanup() {
-  log "🗑️  DIST Clean-Up"
-  rm -rf dist
+function buildCleanup() {
+  log "🗑️  Build Clean-Up"
+  rm -rf build
 }
 
 function log() {
@@ -46,15 +46,16 @@ function logCleanup() {
   log "🗑️  LOG Clean-Up"
 }
 
-function scssWatchDev() {
+function scssWatch() {
   log "😳  SCSS watch"
   ./node_modules/.bin/nodemon \
     -e scss \
     --watch assets/scss \
-    -x ./bin/scss-build--dev.sh
+    --verbose \
+    -x ./bin/scss-build.sh
 }
 
-function scssBuildDev() {
+function scssBuild() {
   scssProcess
   postcssPrefix
   postcssCalc
@@ -62,18 +63,9 @@ function scssBuildDev() {
   postcssObjectfit
   postcssSelectornot
   postcssCustomproperties
-  cssCopyToJekyll
-}
-
-function scssBuildDist() {
-  scssProcess
-  postcssPrefix
-  postcssCalc
-  postcssFontvalues
-  postcssObjectfit
-  postcssSelectornot
-  postcssCustomproperties
-  postcssO
+  if [ "$MODE" = "production" ]; then
+    postcssO
+  fi
   cssCopyToJekyll
 }
 

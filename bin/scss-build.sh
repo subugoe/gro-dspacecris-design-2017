@@ -3,8 +3,4 @@
 
 source ./bin/lib.sh
 
-logCleanup
-distCleanup
-jekyllCleanup
-imgCleanup
-mkdir dist
+scssBuild

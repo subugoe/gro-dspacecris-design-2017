@@ -3,4 +3,4 @@
 
 source ./bin/lib.sh
 
-scssBuildDev
+jekyllBuild

@@ -1,6 +1,6 @@
 assets/css
 assets/img/optimized
-dist
+build
 jekyll/assets/css
 jekyll/assets/img
 node_modules
