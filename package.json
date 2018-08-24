@@ -9,7 +9,7 @@
     "autoprefixer": "^8.0.0",
     "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.23.6",
-    "cssnano": "^3.10",
+    "cssnano": "^4.1.0",
     "csso": "^3.5.0",
     "csso-cli": "^1.1.0",
     "imagemin-cli": "^3.0",
