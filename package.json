@@ -22,7 +22,7 @@
     "postcss": "^6.0.19",
     "postcss-calc": "^6.0",
     "postcss-cli": "^5.0.0",
-    "postcss-custom-properties": "^7.0.0",
+    "postcss-custom-properties": "^8.0.2",
     "postcss-minify-font-values": "^1.0",
     "postcss-object-fit-images": "^1.1",
     "postcss-selector-not": "^3.0.1",
