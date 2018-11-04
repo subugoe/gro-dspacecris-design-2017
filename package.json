@@ -16,7 +16,7 @@
     "imagemin-pngcrush": "^5.1",
     "imagemin-svgo": "^6.0",
     "imagemin-webp": "^4.0",
-    "node-sass": "^4.7",
+    "node-sass": "^4.10.0",
     "nodemon": "^1.17.1",
     "ntl": "^1.2",
     "postcss": "^6.0.19",
