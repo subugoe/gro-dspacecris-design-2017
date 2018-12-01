@@ -13,7 +13,7 @@
     "csso": "^3.5.0",
     "csso-cli": "^1.1.0",
     "imagemin-cli": "^3.0",
-    "imagemin-pngcrush": "^5.1",
+    "imagemin-pngcrush": "^6.0.0",
     "imagemin-svgo": "^6.0",
     "imagemin-webp": "^4.0",
     "node-sass": "^4.7",
