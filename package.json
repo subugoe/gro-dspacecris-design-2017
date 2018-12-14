@@ -17,7 +17,7 @@
     "imagemin-svgo": "^6.0",
     "imagemin-webp": "^4.0",
     "node-sass": "^4.7",
-    "nodemon": "^1.17.1",
+    "nodemon": "^1.18.9",
     "ntl": "^1.2",
     "postcss": "^6.0.19",
     "postcss-calc": "^6.0",
