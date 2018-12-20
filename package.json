@@ -21,7 +21,7 @@
     "ntl": "^1.2",
     "postcss": "^6.0.19",
     "postcss-calc": "^6.0",
-    "postcss-cli": "^5.0.0",
+    "postcss-cli": "^6.1.0",
     "postcss-custom-properties": "^7.0.0",
     "postcss-minify-font-values": "^1.0",
     "postcss-object-fit-images": "^1.1",
