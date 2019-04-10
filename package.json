@@ -26,7 +26,7 @@
     "postcss-minify-font-values": "^1.0",
     "postcss-object-fit-images": "^1.1",
     "postcss-selector-not": "^3.0.1",
-    "sassdoc": "^2.5.0"
+    "sassdoc": "^2.6.0"
   },
   "config": {
     "img": {
