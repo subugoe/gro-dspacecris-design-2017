@@ -6,7 +6,7 @@
   "homepage": "https://gro-dspacecris-design-2017.netlify.com/",
   "author": "Nils Windisch <nils@windisch.me>",
   "devDependencies": {
-    "autoprefixer": "^8.0.0",
+    "autoprefixer": "^9.6.4",
     "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.23.6",
     "cssnano": "^3.10",
